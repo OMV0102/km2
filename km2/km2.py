@@ -130,8 +130,8 @@ def Test2(X,K,n):
             D = 0 #Обнуляем дисперсию
             #n = len(X)
             for i in range(K):
-                left = n / K * i
-                right = n / K * (i + 1)
+                left = N / K * i
+                right = N / K * (i + 1)
                 for j in range(n):
                     if X[j] <= right and X[j] >= left: #попадает ли в интервал
                         V[i] += 1
